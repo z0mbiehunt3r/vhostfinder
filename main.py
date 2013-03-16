@@ -103,10 +103,10 @@ if __name__=='__main__':
     gr2 = parser.add_argument_group('Optional arguments')
     gr2.add_argument('-p', '--proxies', dest='proxiefile', required=False, help='File with proxies')
     gr2.add_argument('-t', '--threads', dest='concurrentreq', required=False, type=int, default=50, help='Concurrent HTTP(S) requests')
-    gr2.add_argument('-v', '--verbose', dest='verbositylevel', required=False, action='count', default=0, help='Verbosity level')
-    gr2.add_argument('-c', '--colours', dest='colours', required=False, default=False,  action='store_true', help='coloured output')
+    gr2.add_argument('-v', '--verbose', dest='verbositylevel', required=False, action='count', default=0, help='Verbosity level (up to -vv)')
+    gr2.add_argument('-c', '--colours', dest='colours', required=False, default=False,  action='store_true', help='Coloured output')
     gr2.add_argument('--timeout', dest='timeout', required=False, type=int, default=10, help='HTTP timeout')
-    gr2.add_argument('--ssl', dest='usessl', required=False, default=False,  action='store_true', help='use HTTPS instead of HTTP')
+    gr2.add_argument('--ssl', dest='usessl', required=False, default=False,  action='store_true', help='Use HTTPS instead of HTTP')
     
     # Check if enough arguments are given
     _check_arguments()
