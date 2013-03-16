@@ -1,0 +1,17 @@
+panel
+www
+m
+mobile
+admin
+blog
+test
+www
+mail
+webmail
+secure
+secret
+beta
+alpha
+dev
+internal
+wiki
