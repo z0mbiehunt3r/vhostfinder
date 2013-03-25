@@ -295,7 +295,7 @@ class VirtualHostFinder:
                 input_queue.put(request_data)
             
         # start making HTTP(s) requests
-        for x in range(1, self._concurrent_requests):
+        for x in range(0, self._concurrent_requests):
             t = VirtualHostCheckerThread(semaphore, input_queue, output_results, self._verbosity_level, self._coloured_output)
             t.daemon = True
             threads_list.append(t)
